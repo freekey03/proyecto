@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculadora </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilocal.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<script src="funcionescal.js" async="true"></script>
+</head>
+<body>
+	<div id="Calculadora">
+		<div id="Pantalla">
+			
+			<div class="Estado">
+				<button onclick="claro()"><i id="bc" class="fas fa-sun"></i></button>
+				<button onclick="oscuro()"><i id="bo" class="fas fa-moon activo"></i></button>
+			</div>
+			<div id="Interfaz1"></div>
+			<div id="Interfaz2"></div>
+		</div>
+		<div class="Botones">
+			<button class="Boton NoMarg Borrar" onclick="borrar()"> C </button>
+			<div class="Boton"></div>
+			<div class="Boton"></div>
+			<button class="Boton Opera" onclick="Agregar('/')"> / </button>
+			
+			<button class="Boton NoMarg" onclick="Agregar(7)"> 7 </button>
+			<button class="Boton" onclick="Agregar(8)"> 8 </button>
+			<button class="Boton" onclick="Agregar(9)"> 9 </button>
+			<button class="Boton Opera" onclick="Agregar('*')"> X </button>
+
+			<button class="Boton NoMarg" onclick="Agregar(4)"> 4 </button>
+			<button class="Boton" onclick="Agregar(5)"> 5 </button>
+			<button class="Boton" onclick="Agregar(6)"> 6 </button>
+			<button class="Boton Opera" onclick="Agregar('-')"> - </button>
+
+			<button class="Boton NoMarg" onclick="Agregar(1)"> 1 </button>
+			<button class="Boton" onclick="Agregar(2)"> 2 </button>
+			<button class="Boton" onclick="Agregar(3)"> 3 </button>
+			<button class="Boton Opera" onclick="Agregar('+')"> + </button>
+
+			<button class="Boton NoMarg" onclick="Agregar(0)"> 0 </button>
+			<div class="Boton"></div>
+			<button class="Boton" onclick="Agregar('.')"> . </button>
+			<button class="Boton" id="Igual" onclick="Resul()"> = </button>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
